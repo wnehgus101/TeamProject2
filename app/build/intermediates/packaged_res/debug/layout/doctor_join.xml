@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="684dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/join_id"
+                android:layout_width="229dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="84dp"
+                android:ems="10"
+                android:hint="아이디"
+                android:inputType="text"
+                app:layout_constraintEnd_toStartOf="@+id/check_button"
+                app:layout_constraintHorizontal_bias="0.689"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/check_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="96dp"
+                android:layout_marginEnd="40dp"
+                android:text="확인"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/join_password"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_id" />
+
+            <EditText
+                android:id="@+id/join_pw_ck"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_password" />
+
+            <EditText
+                android:id="@+id/join_name"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:hint="수의사 이름"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_pw_ck" />
+
+            <EditText
+                android:id="@+id/join_Phone"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="연락처"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_name" />
+
+            <EditText
+                android:id="@+id/join_sex"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="성별"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_Phone" />
+
+            <TextView
+                android:id="@+id/pet"
+                android:layout_width="112dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="48dp"
+                android:text="프로필 사진"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_sex" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pet"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/check_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="사진 선택"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <EditText
+                android:id="@+id/career"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="376dp"
+                android:ems="10"
+                android:hint="경력"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_sex" />
+
+            <EditText
+                android:id="@+id/one_line"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="한줄 소개"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/career" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="333dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="금액"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/one_line" />
+
+            <EditText
+                android:id="@+id/available_pets"
+                android:layout_width="339dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:hint="진료 가능한 반려동물"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="201dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="108dp"
+                android:text="완료"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/available_pets" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
