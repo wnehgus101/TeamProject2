@@ -4,7 +4,7 @@
             "outputFile": "org.techtown.myapplication.app-mergeDebugResources-29:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/Users/judohyeon/.gradle/caches/transforms-3/99560dc8d0d2bb4d68d23467c9c0ca6f/transformed/material-1.10.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\home\\AndroidStudioProjects\\Hello\\caches\\transforms-3\\3801bb2ee662426e5389f1d5dff07ce2\\transformed\\material-1.10.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

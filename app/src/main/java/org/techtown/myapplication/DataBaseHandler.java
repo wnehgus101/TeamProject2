@@ -26,6 +26,12 @@ public class DataBaseHandler extends DataBaseHelper{
         return db.insert("user_table", null, values);
     }
 
+    // 사용자 정보 삭제 함수
+    public void deleteUser(String id) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("user_table", "id=?", new String[]{id});
+    }
+
     //전문가 정보 추가 저장 함수
     public long addExpertData(String path, String career, String introduce, String price, String careable_pet,int number){
         ContentValues values = new ContentValues();

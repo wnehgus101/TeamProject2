@@ -46,6 +46,7 @@
         <activity android:name="org.techtown.myapplication.DoctorJoin" />
         <activity android:name="org.techtown.myapplication.UserJoin" />
         <activity android:name="org.techtown.myapplication.ActivityLogIn" />
+        <activity android:name="org.techtown.myapplication.pet_profile" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

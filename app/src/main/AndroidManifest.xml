@@ -31,6 +31,7 @@
         <activity android:name=".DoctorJoin"/>
         <activity android:name=".UserJoin"/>
         <activity android:name=".ActivityLogIn"/>
+        <activity android:name=".pet_profile"/>
     </application>
 
 </manifest>
