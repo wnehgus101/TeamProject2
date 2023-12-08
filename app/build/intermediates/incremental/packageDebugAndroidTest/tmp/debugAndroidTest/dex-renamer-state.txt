@@ -1,7 +1,0 @@
-#Mon Dec 04 01:05:07 KST 2023
-base.0=/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
-base.1=/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
-path.0=classes.dex
-path.1=0/classes.dex
-renamed.0=classes.dex
-renamed.1=classes2.dex

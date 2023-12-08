@@ -1,3 +1,0 @@
-org.techtown.myapplication.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

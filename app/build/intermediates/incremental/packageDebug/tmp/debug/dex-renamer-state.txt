@@ -1,7 +1,7 @@
-#Thu Dec 07 11:48:03 KST 2023
-base.0=/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+#Fri Dec 08 00:10:37 KST 2023
+base.0=C\:\\Users\\ASUS\\AndroidStudioProjects\\TeamProject2\\TeamProject2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\ASUS\\AndroidStudioProjects\\TeamProject2\\TeamProject2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\ASUS\\AndroidStudioProjects\\TeamProject2\\TeamProject2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=1/classes.dex

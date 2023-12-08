@@ -57,4 +57,12 @@
             android:layout_height="match_parent" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/gotoSetting4"
+        android:layout_width="85dp"
+        android:layout_height="54dp"
+        android:background="@drawable/setting"
+        tools:layout_editor_absoluteX="325dp"
+        tools:layout_editor_absoluteY="2dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

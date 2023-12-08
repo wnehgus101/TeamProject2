@@ -31,7 +31,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="84dp"
                 android:ems="10"
-                android:hint="아이디"
+                android:hint="아이디(영어로, 4자 이상, 10자 이내)"
                 android:inputType="text"
                 app:layout_constraintEnd_toStartOf="@+id/check_button"
                 app:layout_constraintHorizontal_bias="0.689"
@@ -54,7 +54,7 @@
                 android:layout_height="55dp"
                 android:layout_marginTop="40dp"
                 android:ems="10"
-                android:hint="비밀번호"
+                android:hint="비밀번호(6자 이상)"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/join_pw_ck" />
+                app:layout_constraintTop_toBottomOf="@+id/join_pwck" />
 
             <EditText
                 android:id="@+id/join_Phone"
@@ -190,13 +190,26 @@
                 android:id="@+id/available_pets"
                 android:layout_width="339dp"
                 android:layout_height="62dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="32dp"
                 android:ems="10"
                 android:hint="진료 가능한 반려동물"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.541"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="339dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="진료가능 요일 및 시간"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/available_pets" />
 
             <Button
                 android:id="@+id/button5"

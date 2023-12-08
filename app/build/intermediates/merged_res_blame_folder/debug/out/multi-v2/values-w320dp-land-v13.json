@@ -4,7 +4,7 @@
             "outputFile": "org.techtown.myapplication.app-mergeDebugResources-29:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/judohyeon/.gradle/caches/transforms-3/99560dc8d0d2bb4d68d23467c9c0ca6f/transformed/material-1.10.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\99560dc8d0d2bb4d68d23467c9c0ca6f\\transformed\\material-1.10.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

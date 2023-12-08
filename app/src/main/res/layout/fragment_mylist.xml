@@ -10,10 +10,12 @@
         android:id="@+id/toolbar4"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="#009688"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,5 +127,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
     </FrameLayout>
+
+    <Button
+        android:id="@+id/gotoSetting3"
+        android:layout_width="61dp"
+        android:layout_height="58dp"
+        android:background="@drawable/setting"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

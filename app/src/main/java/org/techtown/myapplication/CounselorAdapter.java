@@ -22,7 +22,7 @@ public class CounselorAdapter extends RecyclerView.Adapter<CounselorAdapter.Coun
     @NonNull
     @Override
     public CounselorViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_counselor, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_conunselor, parent, false);
         return new CounselorViewHolder(view);
     }
 
@@ -31,7 +31,7 @@ public class CounselorAdapter extends RecyclerView.Adapter<CounselorAdapter.Coun
         Counselor counselor = counselorList.get(position);
 
         // 상담사 정보 설정
-        holder.imageView.setImageResource(R.drawable.sample_avatar); // 적절한 이미지 리소스로 대체
+        holder.imageView.setImageResource(R.drawable.man); // 적절한 이미지 리소스로 대체
         holder.nameTextView.setText(counselor.getName());
         holder.locationTextView.setText("병원 위치: " + counselor.getLocation());
         holder.experienceTextView.setText("경력: " + counselor.getExperience());
@@ -57,4 +57,3 @@ public class CounselorAdapter extends RecyclerView.Adapter<CounselorAdapter.Coun
         }
     }
 }
-

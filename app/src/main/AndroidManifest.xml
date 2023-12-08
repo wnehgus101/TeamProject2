@@ -31,6 +31,10 @@
         <activity android:name=".DoctorJoin"/>
         <activity android:name=".UserJoin"/>
         <activity android:name=".ActivityLogIn"/>
+        <activity android:name=".Schedule"/>
+        <activity android:name=".ScheduleDoctors"/>
+        <activity android:name=".SettingDoctor"/>
+        <activity android:name="Setting"/>
     </application>
 
 </manifest>
