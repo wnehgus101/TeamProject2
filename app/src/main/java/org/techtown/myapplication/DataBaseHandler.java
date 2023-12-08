@@ -14,7 +14,8 @@ public class DataBaseHandler extends DataBaseHelper{
     }
 
     //유저 정보 저장 함수
-    public long addUserData(String id, String pw, String name, String contact, String gender, int role){
+    public long addUserData(String id, String pw, String name, String contact,
+                            String gender, int role){
         ContentValues values = new ContentValues();
         values.put("id", id);
         values.put("pw", pw);
@@ -27,7 +28,8 @@ public class DataBaseHandler extends DataBaseHelper{
     }
 
     //전문가 정보 추가 저장 함수
-    public long addExpertData(String path, String career, String introduce, String price, String careable_pet,int number){
+    public long addExpertData(String path, String career, String introduce,
+                              String price, String careable_pet,int number){
         ContentValues values = new ContentValues();
         values.put("image_path", path);
         values.put("career", career);
@@ -41,7 +43,8 @@ public class DataBaseHandler extends DataBaseHelper{
     }
 
     //반려동물 데이터 추가
-    public long addPetData(String image_path, String file_path, String pet_name, String pet_age, String pet_gender, String pet_species, int number){
+    public long addPetData(String image_path, String file_path, String pet_name,
+                           String pet_age, String pet_gender, String pet_species, int number){
         ContentValues values = new ContentValues();
         values.put("image_path", image_path);
         values.put("file_path", file_path);

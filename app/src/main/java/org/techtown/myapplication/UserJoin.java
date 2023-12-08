@@ -1,6 +1,5 @@
 package org.techtown.myapplication;
 
-import android.content.ContentUris;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -8,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -191,7 +189,7 @@ public class UserJoin extends AppCompatActivity {
         //사용 객체
         EditText user_id = findViewById(R.id.join_id);
         EditText user_password = findViewById(R.id.join_password);
-        EditText user_pw_ck = findViewById(R.id.join_pwck);
+        EditText user_pw_ck = findViewById(R.id.join_pw_ck);
         EditText user_name = findViewById(R.id.join_name);
         EditText user_contact = findViewById(R.id.join_Phone);
         EditText user_gender = findViewById(R.id.join_sex);
