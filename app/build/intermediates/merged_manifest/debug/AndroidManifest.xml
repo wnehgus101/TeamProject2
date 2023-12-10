@@ -6,12 +6,24 @@
 
     <uses-sdk
         android:minSdkVersion="33"
-        android:targetSdkVersion="33" />
+        android:targetSdkVersion="34" />
 
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <permission
         android:name="org.techtown.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -24,6 +36,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:debuggable="true"
+        android:enableOnBackInvokedCallback="true"
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -41,11 +54,69 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="org.techtown.myapplication.Profile" />
-        <activity android:name="org.techtown.myapplication.Review" />
         <activity android:name="org.techtown.myapplication.DoctorJoin" />
         <activity android:name="org.techtown.myapplication.UserJoin" />
         <activity android:name="org.techtown.myapplication.ActivityLogIn" />
+        <activity android:name="org.techtown.myapplication.DoctorMain" />
+        <activity android:name="org.techtown.myapplication.UserMain" />
+        <activity android:name="org.techtown.myapplication.DoctorList" />
+        <activity android:name="org.techtown.myapplication.ui.CallActivity" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="org.techtown.myapplication.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -57,30 +128,7 @@
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
-            <meta-data
-                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-                android:value="androidx.startup" />
         </provider>
-
-        <receiver
-            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-            android:directBootAware="false"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="android.permission.DUMP" >
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>

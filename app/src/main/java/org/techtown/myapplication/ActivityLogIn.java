@@ -48,15 +48,25 @@ public class ActivityLogIn extends AppCompatActivity {
                 id_check[0] = db_handler.isIDExists(ID);
                 pw_check[0] = db_handler.isPWExists(PW);
 
-                if(!id_check[0] && !pw_check[0]){
+                if(id_check[0] && pw_check[0]){
+                    Toast.makeText(ActivityLogIn.this, "로그인 성공", Toast.LENGTH_SHORT).show();
+
                     type = db_handler.getRoleById(ID);
                     number = db_handler.getNumberById(ID);
 
-                    if(type == 0){
-                        //Intent intent = new Intent(ActivityLogIn.this, );
+                    Intent intent;
+
+                    if (type == 0){
+                        intent = new Intent(ActivityLogIn.this, DoctorMain.class);
+                        Toast.makeText(ActivityLogIn.this, "전문가 회원님 환영합니다.", Toast.LENGTH_SHORT).show();
                     } else {
-                        //Intent intent = new Intent(ActivityLogIn,this, );
+                        intent = new Intent(ActivityLogIn.this, UserMain.class);
+                        Toast.makeText(ActivityLogIn.this, "환영합니다.", Toast.LENGTH_SHORT).show();
                     }
+
+                    intent.putExtra("user_number" ,number);
+                    startActivity(intent);
+
                 } else {
                     Toast.makeText(ActivityLogIn.this, "회원정보가 존재하지 않습니다.", Toast.LENGTH_SHORT).show();
                 }

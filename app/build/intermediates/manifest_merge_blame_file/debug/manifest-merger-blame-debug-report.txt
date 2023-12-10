@@ -6,153 +6,249 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="33"
-9        android:targetSdkVersion="33" />
+9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-11-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:5:5-76
-11-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:5:22-73
+11-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:5:5-76
+11-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:5:22-73
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:6:5-80
-12-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:6:22-77
+12-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:7:5-81
-13-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:7:22-78
+13-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:7:22-78
 14    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-14-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:8:5-82
-14-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:8:22-79
-15
-16    <permission
-16-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-17        android:name="org.techtown.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-17-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
-18        android:protectionLevel="signature" />
-18-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+14-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:8:5-82
+14-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:8:22-79
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:9:5-65
+15-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:10:5-71
+16-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:10:22-68
+17
+18    <uses-feature android:name="android.hardware.camera" />
+18-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:12:5-60
+18-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:12:19-57
 19
-20    <uses-permission android:name="org.techtown.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-20-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-20-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-21
-22    <application
-22-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:10:5-34:19
-23        android:allowBackup="true"
-23-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:11:9-35
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
-25        android:dataExtractionRules="@xml/data_extraction_rules"
-25-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:12:9-65
-26        android:debuggable="true"
-27        android:extractNativeLibs="false"
-28        android:fullBackupContent="@xml/backup_rules"
-28-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:13:9-54
-29        android:icon="@mipmap/ic_launcher"
-29-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:14:9-43
-30        android:label="@string/app_name"
-30-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:15:9-41
-31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:16:9-54
-32        android:supportsRtl="true"
-32-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:17:9-35
-33        android:testOnly="true"
-34        android:theme="@style/Theme.MyApplication" >
-34-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:18:9-51
-35        <activity
-35-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:20:9-28:20
-36            android:name="org.techtown.myapplication.MainActivity"
-36-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:21:13-41
-37            android:exported="true" >
-37-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:22:13-36
-38            <intent-filter>
-38-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:23:13-27:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:24:17-69
-39-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:24:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:26:17-77
-41-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:26:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity android:name="org.techtown.myapplication.Profile" />
-44-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:29:9-44
-44-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:29:19-42
-45        <activity android:name="org.techtown.myapplication.Review" />
-45-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:30:9-43
-45-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:30:19-41
-46        <activity android:name="org.techtown.myapplication.DoctorJoin" />
-46-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:31:9-47
-46-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:31:19-45
-47        <activity android:name="org.techtown.myapplication.UserJoin" />
-47-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:32:9-45
-47-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:32:19-43
-48        <activity android:name="org.techtown.myapplication.ActivityLogIn" />
-48-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:33:9-50
-48-->/Users/judohyeon/AndroidStudioProjects/TeamProject_2/app/src/main/AndroidManifest.xml:33:19-48
-49
-50        <provider
-50-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-51            android:name="androidx.startup.InitializationProvider"
-51-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-52            android:authorities="org.techtown.myapplication.androidx-startup"
-52-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-53            android:exported="false" >
-53-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-54            <meta-data
-54-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-55-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-56                android:value="androidx.startup" />
-56-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-57            <meta-data
-57-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/judohyeon/.gradle/caches/transforms-3/983748488b9e81a7fb8b6b462ce81aee/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-58-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/judohyeon/.gradle/caches/transforms-3/983748488b9e81a7fb8b6b462ce81aee/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-59                android:value="androidx.startup" />
-59-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/judohyeon/.gradle/caches/transforms-3/983748488b9e81a7fb8b6b462ce81aee/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-60            <meta-data
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-61                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-62                android:value="androidx.startup" />
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-63        </provider>
+20    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+21    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:24:5-79
+22-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:24:22-76
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:25:5-67
+23-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:25:22-64
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:24:5-68
+24-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:24:22-65
+25    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+25-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:25:5-79
+25-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:25:22-76
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+26-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:26:22-107
+27
+28    <permission
+28-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+29        android:name="org.techtown.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="org.techtown.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:14:5-42:19
+35        android:allowBackup="true"
+35-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:15:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.9.0] /Users/judohyeon/.gradle/caches/transforms-3/28a7af075d5af218c19b63a2f54b1523/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+37        android:dataExtractionRules="@xml/data_extraction_rules"
+37-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:16:9-65
+38        android:debuggable="true"
+39        android:enableOnBackInvokedCallback="true"
+39-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:23:9-51
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:17:9-54
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:18:9-43
+43        android:label="@string/app_name"
+43-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:19:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:20:9-54
+45        android:supportsRtl="true"
+45-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:21:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.MyApplication" >
+47-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:22:9-51
+48        <activity
+48-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:25:9-33:20
+49            android:name="org.techtown.myapplication.MainActivity"
+49-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:26:13-41
+50            android:exported="true" >
+50-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:27:13-36
+51            <intent-filter>
+51-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:28:13-32:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:29:17-69
+52-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:29:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:31:17-77
+54-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:31:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity android:name="org.techtown.myapplication.DoctorJoin" />
+57-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:34:9-47
+57-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:34:19-45
+58        <activity android:name="org.techtown.myapplication.UserJoin" />
+58-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:35:9-45
+58-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:35:19-43
+59        <activity android:name="org.techtown.myapplication.ActivityLogIn" />
+59-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:36:9-50
+59-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:36:19-48
+60        <activity android:name="org.techtown.myapplication.DoctorMain" />
+60-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:37:9-47
+60-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:37:19-45
+61        <activity android:name="org.techtown.myapplication.UserMain" />
+61-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:38:9-45
+61-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:38:19-43
+62        <activity android:name="org.techtown.myapplication.DoctorList" />
+62-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:39:9-47
+62-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:39:19-45
+63        <activity android:name="org.techtown.myapplication.ui.CallActivity" />
+63-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:40:9-52
+63-->/Users/judohyeon/AndroidStudioProjects/TeamProject2/app/src/main/AndroidManifest.xml:40:19-50
 64
-65        <receiver
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-66            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-67            android:directBootAware="false"
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-68            android:enabled="true"
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-69            android:exported="true"
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-70            android:permission="android.permission.DUMP" >
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-71            <intent-filter>
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-72                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-73            </intent-filter>
-74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-75                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-76            </intent-filter>
-77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-78                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-79            </intent-filter>
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-81                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/judohyeon/.gradle/caches/transforms-3/784ad8f1570ed9f0e3099a314a2f712a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-82            </intent-filter>
-83        </receiver>
-84    </application>
-85
-86</manifest>
+65        <service
+65-->[com.google.firebase:firebase-database-ktx:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/5133183a9b8fa6cb171f62d80efd8f9d/transformed/firebase-database-ktx-20.2.2/AndroidManifest.xml:11:9-17:19
+66            android:name="com.google.firebase.components.ComponentDiscoveryService"
+66-->[com.google.firebase:firebase-database-ktx:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/5133183a9b8fa6cb171f62d80efd8f9d/transformed/firebase-database-ktx-20.2.2/AndroidManifest.xml:12:13-84
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:34:13-43
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-database-ktx:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/5133183a9b8fa6cb171f62d80efd8f9d/transformed/firebase-database-ktx-20.2.2/AndroidManifest.xml:13:13-37
+69            <meta-data
+69-->[com.google.firebase:firebase-database-ktx:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/5133183a9b8fa6cb171f62d80efd8f9d/transformed/firebase-database-ktx-20.2.2/AndroidManifest.xml:14:13-16:85
+70                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+70-->[com.google.firebase:firebase-database-ktx:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/5133183a9b8fa6cb171f62d80efd8f9d/transformed/firebase-database-ktx-20.2.2/AndroidManifest.xml:15:17-124
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-database-ktx:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/5133183a9b8fa6cb171f62d80efd8f9d/transformed/firebase-database-ktx-20.2.2/AndroidManifest.xml:16:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/c8e58fd9e38afd8889a8c31b1c4ed512/transformed/firebase-analytics-ktx-21.3.0/AndroidManifest.xml:11:13-13:85
+73                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+73-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/c8e58fd9e38afd8889a8c31b1c4ed512/transformed/firebase-analytics-ktx-21.3.0/AndroidManifest.xml:12:17-126
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-analytics-ktx:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/c8e58fd9e38afd8889a8c31b1c4ed512/transformed/firebase-analytics-ktx-21.3.0/AndroidManifest.xml:13:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/442e9ce8cd41d7e5221f186e06e3a27f/transformed/firebase-common-ktx-20.3.3/AndroidManifest.xml:14:13-16:85
+76                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+76-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/442e9ce8cd41d7e5221f186e06e3a27f/transformed/firebase-common-ktx-20.3.3/AndroidManifest.xml:15:17-113
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-common-ktx:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/442e9ce8cd41d7e5221f186e06e3a27f/transformed/firebase-common-ktx-20.3.3/AndroidManifest.xml:16:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:31:13-33:85
+79                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+79-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:32:17-109
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-database:20.2.2] /Users/judohyeon/.gradle/caches/transforms-3/f409c82aef999f3d6e0d44334db47b9c/transformed/firebase-database-20.2.2/AndroidManifest.xml:33:17-82
+81            <meta-data
+81-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:31:13-33:85
+82                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+82-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:32:17-139
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.android.gms:play-services-measurement-api:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/3a89f6fbbde8aabcc2dc67adb52b8700/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:33:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-installations:17.1.4] /Users/judohyeon/.gradle/caches/transforms-3/74a4b1ff1ba306d6a50a3ed3ba24f8ac/transformed/firebase-installations-17.1.4/AndroidManifest.xml:15:13-17:85
+85                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+85-->[com.google.firebase:firebase-installations:17.1.4] /Users/judohyeon/.gradle/caches/transforms-3/74a4b1ff1ba306d6a50a3ed3ba24f8ac/transformed/firebase-installations-17.1.4/AndroidManifest.xml:16:17-127
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-installations:17.1.4] /Users/judohyeon/.gradle/caches/transforms-3/74a4b1ff1ba306d6a50a3ed3ba24f8ac/transformed/firebase-installations-17.1.4/AndroidManifest.xml:17:17-82
+87        </service>
+88
+89        <provider
+89-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:25:9-30:39
+90            android:name="com.google.firebase.provider.FirebaseInitProvider"
+90-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:26:13-77
+91            android:authorities="org.techtown.myapplication.firebaseinitprovider"
+91-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:27:13-72
+92            android:directBootAware="true"
+92-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:28:13-43
+93            android:exported="false"
+93-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:29:13-37
+94            android:initOrder="100" />
+94-->[com.google.firebase:firebase-common:20.3.3] /Users/judohyeon/.gradle/caches/transforms-3/18a8073e98c8189ac8ee30f45b47e48c/transformed/firebase-common-20.3.3/AndroidManifest.xml:30:13-36
+95
+96        <receiver
+96-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:29:9-33:20
+97            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+97-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:30:13-85
+98            android:enabled="true"
+98-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:31:13-35
+99            android:exported="false" >
+99-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:32:13-37
+100        </receiver>
+101
+102        <service
+102-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:35:9-38:40
+103            android:name="com.google.android.gms.measurement.AppMeasurementService"
+103-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:36:13-84
+104            android:enabled="true"
+104-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:37:13-35
+105            android:exported="false" />
+105-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:38:13-37
+106        <service
+106-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:39:9-43:72
+107            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+107-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:40:13-87
+108            android:enabled="true"
+108-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:41:13-35
+109            android:exported="false"
+109-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:42:13-37
+110            android:permission="android.permission.BIND_JOB_SERVICE" />
+110-->[com.google.android.gms:play-services-measurement:21.3.0] /Users/judohyeon/.gradle/caches/transforms-3/a3b849cfb9bee53b6f3d16bac8758ab1/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:43:13-69
+111
+112        <activity
+112-->[com.google.android.gms:play-services-base:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/8afd002d407a18194afcac435352ae6f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+113            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+113-->[com.google.android.gms:play-services-base:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/8afd002d407a18194afcac435352ae6f/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+114            android:exported="false"
+114-->[com.google.android.gms:play-services-base:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/8afd002d407a18194afcac435352ae6f/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+115-->[com.google.android.gms:play-services-base:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/8afd002d407a18194afcac435352ae6f/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+116
+117        <meta-data
+117-->[com.google.android.gms:play-services-basement:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/9b74cac28ec3d304e9dbf4cb1650c624/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+118            android:name="com.google.android.gms.version"
+118-->[com.google.android.gms:play-services-basement:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/9b74cac28ec3d304e9dbf4cb1650c624/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+119            android:value="@integer/google_play_services_version" />
+119-->[com.google.android.gms:play-services-basement:18.1.0] /Users/judohyeon/.gradle/caches/transforms-3/9b74cac28ec3d304e9dbf4cb1650c624/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+120
+121        <provider
+121-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+122            android:name="androidx.startup.InitializationProvider"
+122-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+123            android:authorities="org.techtown.myapplication.androidx-startup"
+123-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+124            android:exported="false" >
+124-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+125            <meta-data
+125-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+126                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+126-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+127                android:value="androidx.startup" />
+127-->[androidx.emoji2:emoji2:1.2.0] /Users/judohyeon/.gradle/caches/transforms-3/9ec162b5cb5dad7a953e18733a42dbca/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+128            <meta-data
+128-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/judohyeon/.gradle/caches/transforms-3/4eb4b953398cff91e70e367f7f0f5a04/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+129                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+129-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/judohyeon/.gradle/caches/transforms-3/4eb4b953398cff91e70e367f7f0f5a04/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+130                android:value="androidx.startup" />
+130-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/judohyeon/.gradle/caches/transforms-3/4eb4b953398cff91e70e367f7f0f5a04/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+131        </provider>
+132    </application>
+133
+134</manifest>
