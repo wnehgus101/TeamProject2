@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array">
+        <item>남성</item>
+        <item>여성</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="vertical_space">0dp</dimen>
+    <string name="app_name">My Application</string>
+    <string name="careable_pet">진료 가능 동물</string>
+    <string name="career">경력</string>
+    <string name="confirm">확인</string>
+    <string name="contact">전화번호</string>
+    <string name="default_web_client_id" translatable="false">332404686151-dr14g3662t8eglg9klb3gujiir5otsc0.apps.googleusercontent.com</string>
+    <string name="female">여성</string>
+    <string name="firebase_database_url" translatable="false">https://webrtcjava-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">332404686151</string>
+    <string name="google_api_key" translatable="false">AIzaSyC64N8j6692c670eQSZMIXTek6EimUxLmY</string>
+    <string name="google_app_id" translatable="false">1:332404686151:android:7502529dc0044e4d2f6062</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC64N8j6692c670eQSZMIXTek6EimUxLmY</string>
+    <string name="google_storage_bucket" translatable="false">webrtcjava.appspot.com</string>
+    <string name="id">아이디</string>
+    <string name="introduce">소개</string>
+    <string name="male">남성</string>
+    <string name="name">이름</string>
+    <string name="price">금액</string>
+    <string name="project_id" translatable="false">webrtcjava</string>
+    <string name="pw">비밀번호</string>
+    <string name="select">선택</string>
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
+</resources>

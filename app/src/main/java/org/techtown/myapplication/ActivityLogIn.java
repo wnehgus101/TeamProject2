@@ -57,7 +57,7 @@ public class ActivityLogIn extends AppCompatActivity {
                     Intent intent;
 
                     if (type == 0){
-                        intent = new Intent(ActivityLogIn.this, DoctorMain.class);
+                        intent = new Intent(ActivityLogIn.this, UserMain.class);
                         Toast.makeText(ActivityLogIn.this, "전문가 회원님 환영합니다.", Toast.LENGTH_SHORT).show();
                     } else {
                         intent = new Intent(ActivityLogIn.this, UserMain.class);
