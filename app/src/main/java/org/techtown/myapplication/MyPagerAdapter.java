@@ -24,10 +24,8 @@ public class MyPagerAdapter extends FragmentStateAdapter {
         return fragments.length;
     }
 
-    // 추가: 각 탭의 제목을 저장하는 배열
     private final String[] tabTitles = new String[]{"프로필", "경력", "상담후기"};
 
-    // 추가: position에 해당하는 탭의 제목을 반환하는 메서드
     public String getTabTitle(int position) {
         return tabTitles[position];
     }
