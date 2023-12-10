@@ -3356,7 +3356,6 @@ int id imageButton4 0x7f09010f
 int id imageView 0x7f090110
 int id imageView2 0x7f090111
 int id imageView4 0x7f090112
-int id imageView5 0x7f090113
 int id imageView6 0x7f090114
 int id immediateStop 0x7f090115
 int id included 0x7f090116
@@ -3634,6 +3633,7 @@ int id textTop 0x7f090225
 int id textView 0x7f090226
 int id textView10 0x7f090227
 int id textView11 0x7f090228
+int id textView12 0x7f09028d
 int id textView13 0x7f090229
 int id textView14 0x7f09022a
 int id textView15 0x7f09022b

@@ -31,6 +31,15 @@ public class DataBaseHandler extends DataBaseHelper {
         return db.insert("user_table", null, values);
     }
 
+    public long addReviewData(String review, String reviewer_name, int user_number) {
+        ContentValues values = new ContentValues();
+        values.put("review", review);
+        values.put("reviewer_name", reviewer_name);
+        values.put("user_number", user_number);
+
+        return db.insert("review_table", null, values);
+    }
+
     //전문가 정보 추가 저장 함수
     public long addExpertData(String path, String career, String introduce, String price, String careable_pet, int number) {
         ContentValues values = new ContentValues();
@@ -287,5 +296,95 @@ public class DataBaseHandler extends DataBaseHelper {
         }
 
         return expertList;
+    }
+
+    public List<ExpertInfo> getDataForFragment222(String userName) {
+        List<ExpertInfo> expertList = new ArrayList<>();
+
+        // 데이터베이스에서 데이터를 가져오는 쿼리 작성
+        int userNumber = getNumberByName(userName);
+        if (userNumber == -1) {
+            // 사용자 이름에 해당하는 번호를 찾을 수 없는 경우
+            // 오류 처리를 수행하거나 함수 종료
+            // 예를 들면, return Collections.emptyList(); 를 사용하여 빈 리스트 반환
+            return Collections.emptyList();
+        }
+
+        String selectQuery = "SELECT career FROM expert_table WHERE user_number = " + userNumber + ";";
+
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if (cursor != null) {
+            try {
+                int careerIndex = cursor.getColumnIndex("career");
+
+                // Move to the first row of the cursor
+                if (cursor.moveToFirst()) {
+                    do {
+                        ExpertInfo expert = new ExpertInfo();
+
+                        if (careerIndex != -1) {
+                            expert.setCareer(cursor.getString(careerIndex));
+                        }
+
+                        expertList.add(expert);
+
+                    } while (cursor.moveToNext());
+                }
+            } finally {
+                cursor.close();
+                db.close();
+            }
+        }
+
+        return expertList;
+    }
+
+    public List<ReviewInfo> getDataForFragment223(String userName) {
+        List<ReviewInfo> reviewList = new ArrayList<>();
+
+        // 데이터베이스에서 데이터를 가져오는 쿼리 작성
+        int userNumber = getNumberByName(userName);
+        if (userNumber == -1) {
+            // 사용자 이름에 해당하는 번호를 찾을 수 없는 경우
+            // 오류 처리를 수행하거나 함수 종료
+            // 예를 들면, return Collections.emptyList(); 를 사용하여 빈 리스트 반환
+            return Collections.emptyList();
+        }
+
+        String selectQuery = "SELECT review, reviewer_name FROM review_table WHERE user_number = " + userNumber + ";";
+
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if (cursor != null) {
+            try {
+                int reviewIndex = cursor.getColumnIndex("review");
+                int reviewerIndex = cursor.getColumnIndex("reviewer_name");
+
+                // Move to the first row of the cursor
+                if (cursor.moveToFirst()) {
+                    do {
+                        ReviewInfo review = new ReviewInfo();
+
+                        if (reviewIndex != -1) {
+                            review.setReview(cursor.getString(reviewIndex));
+                        }
+                        if (reviewerIndex != -1) {
+                            review.setReviewer(cursor.getString(reviewerIndex));
+                        }
+
+                        reviewList.add(review);
+
+                    } while (cursor.moveToNext());
+                }
+            } finally {
+                cursor.close();
+                db.close();
+            }
+        }
+
+        return reviewList;
     }
 }
