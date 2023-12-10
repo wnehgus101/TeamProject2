@@ -175,12 +175,18 @@ public class DoctorJoin extends AppCompatActivity {
                 String pri = price.getText().toString().trim();
                 String care_pets = careable_pet.getText().toString().trim();
 
+                String review = "예시";
+                String reviewer = "홍길동";
+
                 pw_check[0] = passwordCheck(usr_pw,usr_pw_ck);
 
                 if (pw_check[0] == 1 && !dup[0]){
                     long result_1 = db_handler.addUserData(usr_id, usr_pw, usr_name, usr_contact, usr_gender, user_type);
 
                     int user_number = getLatestUserNumber();
+                    
+                    long result_3 = db_handler.addReviewData(review, reviewer, user_number);
+
 
                     if (result_1 != -1){
                         long result_2 = db_handler.addExpertData(image_path, usr_career, introduce, pri, care_pets, user_number);

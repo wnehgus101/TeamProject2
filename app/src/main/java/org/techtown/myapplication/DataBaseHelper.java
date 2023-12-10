@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DataBaseHelper extends SQLiteOpenHelper{
 
     private static final String DATABASE_NAME = "pet_center_database"; //데이터베이스 이름
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     //생성자
     public DataBaseHelper(Context context){
@@ -52,6 +52,14 @@ public class DataBaseHelper extends SQLiteOpenHelper{
                 + "user_number INTEGER REFERENCES user_table(number)"
                 + ")";
         db.execSQL(create_pet_table_query);
+
+        String create_review_table_query = "CREATE TABLE review_table ("
+                + "number INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "review TEXT,"
+                + "reviewer_name TEXT,"
+                + "user_number INTEGER REFERENCES user_table(number)"
+                + ")";
+        db.execSQL(create_review_table_query);
     }
 
     //테이블 정보 갱신
@@ -60,6 +68,7 @@ public class DataBaseHelper extends SQLiteOpenHelper{
         db.execSQL("DROP TABLE IF EXISTS user_table");
         db.execSQL("DROP TABLE IF EXISTS expert_table");
         db.execSQL("DROP TABLE IF EXISTS pet_table");
+        db.execSQL("DROP TABLE IF EXISTS review_table");
         onCreate(db);
     }
 
